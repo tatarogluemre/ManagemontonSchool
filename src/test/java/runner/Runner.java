@@ -16,8 +16,8 @@ import org.junit.runner.RunWith;
             monochrome = true,      // raporlarin daha okunakli olmasi icin
 
             features = "./src/test/resources/features",  // features folder path
-            glue = {"stepdefinitions" , "hooksUi"},    // stepdefinitions path
-            tags = "@chooselesson",
+            glue = {"stepdefinitions" , "hooks_ui"},    // stepdefinitions path
+            tags = "@login_negative",
             dryRun = false
 
     )

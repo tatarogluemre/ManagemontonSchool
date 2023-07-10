@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="24.857" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Login" name="Login bosgiris dogrulama" time="24.12">
+<system-out><![CDATA[
+Given admin anasayfaya gider................................................passed
+When admin login linkine tiklar.............................................passed
+Then admin login penceresinde oldugunu dogrular.............................passed
+When admin username alanini bos gecer.......................................passed
+Then admin username alanininda required fields uyarisini gorur..............passed
+When admin password alanini bos gecer.......................................passed
+Then admin password alanininda required fields uyarisini gorur..............passed
+And admin login butonuna tiklar.............................................passed
+Then admin login olamadigini dogrular dogrular..............................passed
+]]></system-out>
+</testcase>
+</testsuite>

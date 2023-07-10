@@ -5,9 +5,6 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
-import pages.LoginPage;
-import pages.MainPage;
-
 import java.io.File;
 import java.io.IOException;
 import java.sql.Connection;
@@ -263,15 +260,6 @@ public class ReusableMethods {
         }
     }
 
-    public static void login(String userName, String passWord) {
-        MainPage mainPage = new MainPage();
-        LoginPage loginPage = new LoginPage();
-        mainPage.login.click();
-        loginPage.username.sendKeys(userName);
-        loginPage.password.sendKeys(passWord);
-        JSMethods.clickElementByJS(loginPage.loginButton);
-
-    }
 
 
     public static String generateSSN(int len1, int len2, String c, int length) {
@@ -296,15 +284,6 @@ public class ReusableMethods {
         return phoneNumber.toString();
     }
 
-    public static void viceDeanlogin(String userName, String passWord) {
-        MainPage mainPage = new MainPage();
-        LoginPage loginPage = new LoginPage();
-        mainPage.loginLink.click();
-        loginPage.username.sendKeys(userName);
-        loginPage.password.sendKeys(passWord);
-        JSMethods.clickElementByJS(loginPage.loginButton);
-
-    }
 
 
     public static void isStudentCreated(List<WebElement> pageTable, String fullName) {
